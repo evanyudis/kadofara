@@ -23,7 +23,6 @@ if (key === 'p') {
 }
 });
 
-
 document.querySelector('#playSong').addEventListener('click', function(e){
     e.preventDefault();
     if (audio.paused) {

@@ -16,7 +16,9 @@
   <link rel="stylesheet" type="text/css" href="dist/main.css" />
 </head>
 <body>
-  <div class="loader"></div>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
   <audio controls style="display:none" id="audio" volume="0.1" data-autoplay>
     <source src="bg-sound.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -25,7 +27,7 @@
 	<div class="section active sec-web" id="head">
     <h1>Halo <strong id="app"></strong></h1>
     <p>Welcome to your surprise website, just read each of the page and keep scrolling. Good luck <i class="fa fa-heart" aria-hidden="true"></i>
-      <br><br><span><a class="btn btn-secondary" id="playSong">Play some Music</a></span><br><span>or you can press "p"</span>
+      <br><br><span><a class="btn btn-secondary" id="playSong">Play some Music</a></span><br><span>or you can press "p" on your keyboard</span>
     </p>
   </div>
   <div class="section sec-web" id="friend-wish">
@@ -71,12 +73,28 @@
       <h2>~ Mas Bagus ~</h2>
     </div>
     <div class="slide">
+      <p>Selamat ulang taun teman sperma, semoga bahagia selalu, panjang umur, jadi orang lebih baik tetap tidak toxic ! 
+        ILANGNO RUWETMU !!!!
+        
+        lop u far</p>
+      <h2>~ Koko Dzani ~</h2>
+    </div>
+    <div class="slide">
       <p>hola, parareg! happiest birthday to youuu!!! semoga apa yang lo semogakan tercapai yyyy! semoga sehat selalu dan semoga bisa cepet cepet nikah kalo bisa biar gue dapet hampers bridesmaid dari lo ya pls. semoga ms rona ini cepet selesai dan kita bisa nongki lagiiyyy!! lopyuuu💛💛</p>
       <h2>~ Veve ~</h2>
     </div>
     <div class="slide">
       <p>Selamat ulang tahun fara arek gresik bedebu jancok, semoga yang di inginkan selalu tercapai! Selalu diberikan pikiran positif dan selalu menebarkan kebaikan! Semoga makin dewasa dan langgeng ma temen eug!</p>
       <h2>~ Pisang ~</h2>
+    </div>
+    <div class="slide">
+      <p>Habede Paraa🎊, moga makin dewasa, jadi orang yg lebih baik buat nusa bangsa negara agama papa mama. Semangat PKL nya, cepet lulus kuliah biar bisa cepet nikah💋. Jangan keseringan jatoh lagi ya par wkwk. Lup💕</p>
+      <h2>~ Macuba ~</h2>
+    </div>
+    <div class="slide">
+      <p>Happy Bitchday D O R A
+        Bucin terus yha, jan kasih kendor 🤣</p>
+      <h2>~ Devi ~</h2>
     </div>
     <div class="slide">
       <p>Hepibesdey dek fara.. semoga apa yg disemogakan segera tersemogakan. Buruan nikah gih jan bucin mulu keburu kiamat.</p>
@@ -129,7 +147,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6" id="m1">
-          <video controls data-autoplay loop>
+          <video data-autoplay loop>
             <source src="../kadofara/dist/bagus.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -156,8 +174,8 @@
     <div class="container">
       <div class="row">
         <div class="col-6" id="m1">
-          <video controls data-autoplay loop>
-            <source src="../kadofara/dist/tibo.mov" type="video/mp4">
+          <video data-autoplay loop>
+            <source src="../kadofara/dist/tibo.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -171,7 +189,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6" id="m1">
-          <video controls data-autoplay loop>
+          <video data-autoplay loop>
             <source src="../kadofara/dist/fugu.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -213,10 +231,11 @@
     <a href="#" class="btn btn-link" id="scrollTop"><p>Scroll to Top</p></a>
   </div>
 </div>
-<script type="text/javascript" src="dist/fullpage.js"></script>
+
 
 <script type="text/javascript" src="dist/jquery-3.2.1.slim.min.js"></script>
 <script type="text/javascript" src="dist/jquery-slim.min.js"></script>
+<script type="text/javascript" src="dist/fullpage.js"></script>
 <script type="text/javascript" src="dist/react.js"></script>
 <script type="text/javascript" src="dist/core.js"></script>
 <script type="text/javascript" src="dist/main.js"></script>
@@ -226,7 +245,11 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script>
-
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
 </script>
 </body>
 </html>
