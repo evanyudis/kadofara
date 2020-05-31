@@ -114,9 +114,17 @@ h3 {
 h2 {
 	font-size: 2.7em;
 }
-#head {
+#head, #days-count {
 	background-color: #111;
 	color: #ffb6b6;
+}
+#days-count h1, #days-count h2 {
+	color: #ffffff;
+}
+.padlr {
+	padding-left: 20%;
+	padding-right: 20%;
+	background-color: #ffb6b6;
 }
 .btn-secondary {
 	background-color: #222;
@@ -129,7 +137,7 @@ h2 {
 #head h1 {
 	color: #fff;
 }
-#days-count, #friend-wish-b, #friend-wish {
+#friend-wish-b, #friend-wish {
 	background-color: #ffb6b6;
 }
 #wish-epan, #wish-epan-b, #memo, #foot, .mems {
