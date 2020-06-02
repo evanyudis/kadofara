@@ -55,6 +55,9 @@ abbr,acronym { border: 0;
 	.sec-mob {
 		display: table;
 	}
+	h1 {
+		font-size: 2em;
+	}
 }
 
 /* .mark {
