@@ -44,11 +44,17 @@ q:before,q:after {
 abbr,acronym { border: 0;
 }
 
+.sec-mob {display: none;}
 
 /* Custom CSS
  * --------------------------------------- */
 @media only screen and (max-width: 600px) {
-	
+	.sec-web {
+		display: none;
+	}
+	.sec-mob {
+		display: table;
+	}
 }
 
 /* .mark {
