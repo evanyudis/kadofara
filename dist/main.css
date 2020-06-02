@@ -49,12 +49,6 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 @media only screen and (max-width: 600px) {
-	#fullpage {
-		display: none;
-	}
-	.sec-mob {
-		display: table;
-	}
 	h1 {
 		font-size: 2em;
 	}
