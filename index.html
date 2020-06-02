@@ -23,9 +23,11 @@
     <source src="bg-sound.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-<div class="sec-mob">
-  <h1>Gabisa diakses lewat hp maapin</h1>
-  <p>akses lewat browser desktop/laptop yaaa</p>
+<div id="fpmob">
+  <div class="section active" id="head">
+    <h1>Gabisa diakses lewat hp maapin</h1>
+    <p>akses lewat browser desktop/laptop yaaa</p>
+  </div>
 </div>
 <div id="fullpage">
 	<div class="section active sec-web" id="head">
@@ -247,7 +249,18 @@
 <script type="text/javascript" src="dist/main.js"></script>
 <script type="text/javascript" src="dist/countUp.min.js"></script>
 <script type="text/javascript">
-	var myFullpage = new fullpage('#fullpage');
+  var myFullpage;
+  var x = window.matchMedia("(max-width: 600px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state
+  function myFunction(x) {
+  if (x.matches) { // If media query matches
+    myFullpage = new fullpage('#fpmob');
+  } else {
+    myFullpage = new fullpage('#fullpage');
+  }
+  }
+	// myFullpage = new fullpage('#fullpage');
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script>
